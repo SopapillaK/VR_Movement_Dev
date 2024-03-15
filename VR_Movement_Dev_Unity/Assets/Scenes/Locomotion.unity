@@ -686,6 +686,8 @@ GameObject:
   - component: {fileID: 555861399}
   - component: {fileID: 555861403}
   - component: {fileID: 555861402}
+  - component: {fileID: 555861405}
+  - component: {fileID: 555861404}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
@@ -782,7 +784,43 @@ MonoBehaviour:
   rigRoot: {fileID: 555861401}
   velocity: 2
   rotationSpeed: 100
-  trackedTransform: {fileID: 109936376}
+  trackedTransform: {fileID: 0}
+--- !u!114 &555861404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555861398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc4f2c0214c9b494fa7eb5b8b2c02885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_System: {fileID: 555861405}
+  m_TurnAmount: 45
+  m_DebounceTime: 0.5
+  m_EnableTurnLeftRight: 1
+  m_EnableTurnAround: 1
+  m_DelayTime: 0
+  m_TurnUsage: 0
+  m_Controllers:
+  - {fileID: 1448038975}
+  m_DeadZone: 0.75
+--- !u!114 &555861405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555861398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a5df2202a8b96488c744be3bd0c33e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Timeout: 10
+  m_XROrigin: {fileID: 555861400}
 --- !u!1 &690950961
 GameObject:
   m_ObjectHideFlags: 0
