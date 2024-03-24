@@ -781,10 +781,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 544360ec31c15254c927bcf5230f7ad0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_System: {fileID: 555861405}
   rigRoot: {fileID: 555861401}
+  trackedTransform: {fileID: 0}
   velocity: 2
   rotationSpeed: 100
-  trackedTransform: {fileID: 0}
 --- !u!114 &555861404
 MonoBehaviour:
   m_ObjectHideFlags: 0
